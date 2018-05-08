@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/signup2"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context="com.example.lenovo.chalk_talk.Create_account">
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:shadowColor="@color/colorPrimary"
+            android:text="REGISTER"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_stroke"
+            android:hint="Enter Name"
+            android:padding="10dp"
+            android:textColor="#222"
+            android:inputType="text"
+            android:textColorHint="#000"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/dob_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_et"
+            android:layout_margin="10dp"
+            android:textColorHint="#000"
+            android:background="@drawable/rounded_stroke"
+            android:hint="Enter DOB"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textColor="#222 "
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/Qualification_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dob_et"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_stroke"
+            android:hint="Enter Area of Specialization"
+            android:padding="10dp"
+            android:textColor="#222"
+            android:inputType="text"
+            android:textColorHint="#000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/Address_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Qualification_et"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_stroke"
+            android:hint="Enter Address"
+            android:padding="10dp"
+            android:inputType="text|number"
+            android:textColor="#222 "
+            android:textColorHint="#000"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/gender_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Address_et"
+            android:layout_margin="10dp"
+            android:text="Gender : "
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/gender_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Address_et"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/gender_txt"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="male" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_txt"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_stroke"
+            android:hint="Enter Email"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#222 "
+            android:textColorHint="#000"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_et"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_stroke"
+            android:hint="Enter password"
+            android:padding="10dp"
+            android:inputType="textPassword|numberPassword"
+            android:textColor="#222 "
+            android:textColorHint="#000"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/cpassword_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_et"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_stroke"
+            android:hint="Confirm password"
+            android:padding="10dp"
+            android:inputType="textPassword|numberPassword"
+            android:textColor="#222"
+            android:textColorHint="#000"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cpassword_et"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30sp"
+            android:background="#080e51"
+            android:onClick="register_tutor"
+            android:text="register"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</ScrollView>

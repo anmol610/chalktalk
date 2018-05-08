@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.chalk_talk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".learner_login" />
+        <activity android:name=".tutor_login" />
+        <activity android:name=".Create_account" />
+        <activity android:name=".uploading_images" />
+        <activity android:name=".uploading_pdf_files" />
+        <activity android:name=".UploadVideoActivity" />
+        <activity android:name=".tutor_create_account" />
+        <activity android:name=".User_profile" />
+        <activity android:name=".firstpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tutor_home_page"
+            android:label="@string/title_activity_tutor_home_page" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_learner_home_page" />
+        <activity android:name=".feedback" />
+        <activity android:name=".settings" />
+        <activity android:name=".Tutor_profile" />
+        <activity android:name=".tutor_setting" />
+        <activity android:name=".learner_create_account" />
+        <activity
+            android:name=".learner_home"
+            android:label="@string/title_activity_learner_home" />
+        <activity android:name=".course_lists" />
+        <activity android:name=".course_detail" />
+        <activity android:name=".tutor_course_details" />
+        <activity android:name=".add_course" />
+        <activity android:name=".course_vidd" />
+        <activity android:name=".book_course" />
+        <activity android:name=".Show_videos" />
+        <activity android:name=".uploaded" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".show_pdf" />
+        <activity android:name=".show_images"></activity>
+    </application>
+
+</manifest>

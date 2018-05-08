@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="Course Opted"
+android:id="@+id/course_opt"
+    android:icon="@drawable/course1"
+
+    />
+    <item
+        android:title="Courses"
+        android:icon="@drawable/allcourse"
+        android:id="@+id/all_courses"
+       />
+
+</menu>

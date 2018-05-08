@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "4100841611",
+    "firebase_url": "https://chalk-talk-b05eb.firebaseio.com",
+    "project_id": "chalk-talk-b05eb",
+    "storage_bucket": "chalk-talk-b05eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4100841611:android:4db4fb399b08648f",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.chalk_talk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4100841611-26a4kqmod5cbrjb6gcg3ukhg9i3j1vpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIB5NO_-hZQ_Ywr6tg3nykRyipIMY4ik4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/signup2"
+   android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Course"
+        android:textSize="40dp"
+        android:textColor="#111"/>
+
+    <EditText
+        android:id="@+id/cource_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter course id"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_stroke"
+        android:singleLine="true"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_stroke"
+        android:singleLine="true"
+        android:hint="course_name"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/course_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_stroke"
+        android:layout_marginTop="10dp"
+        android:hint="course duration"
+        android:padding="5dp" />
+
+    <Spinner
+        android:id="@+id/spintestAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:popupBackground="@android:color/white"
+        android:scrollbars="none"
+        android:spinnerMode="dropdown" />
+    <EditText
+        android:id="@+id/tutor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_stroke"
+        android:layout_marginTop="10dp"
+        android:hint="Tutor name"
+        android:enabled="false"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select cource material Type"
+        android:layout_marginTop="10dp"
+        android:id="@+id/notes_type_heading"
+        android:layout_below="@+id/session"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:id="@+id/select_materiial_type"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF"
+            android:id="@+id/pdf_radio_btn"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIDEO"
+            android:id="@+id/video_radio_btn"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMAGE"
+            android:id="@+id/image_radio_btn"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOC"
+            android:id="@+id/doc_radio_btn"
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#1f2b78"
+        android:text="Done"
+        android:id="@+id/add_btn"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+</LinearLayout>

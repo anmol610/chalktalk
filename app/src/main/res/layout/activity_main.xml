@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:gravity="center"
+    android:background="@drawable/mainpic"
+    >
+ <!--<ImageView
+
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="50sp"
+    android:layout_centerHorizontal="true"
+    />-->
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="continue as learner"
+    android:id="@+id/login"
+    android:onClick="learner_login"
+    android:background="@drawable/login_background"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="continue as tutor"
+        android:layout_below="@+id/login"
+        android:onClick="tutor_login"
+        android:background="@drawable/login_background"
+        android:layout_marginTop="30sp" />
+
+</RelativeLayout>

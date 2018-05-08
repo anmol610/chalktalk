@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.chalk_talk.settings">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d20707">
+
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/back_arrow"
+        android:layout_marginTop="10dp"
+      android:onClick="backarrow"
+    android:id="@+id/backarrow_set"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Settings"
+    android:textSize="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/backarrow_set"
+    android:textColor="#fff"
+    android:id="@+id/set"/>
+</RelativeLayout>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Video download options"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:id="@+id/video"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download via Wi-Fi only"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/wifi"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:contextClickable="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cfc4c4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download to SD card"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/sd"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:contextClickable="true"
+        android:layout_marginTop="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cfc4c4"/>
+</LinearLayout>
