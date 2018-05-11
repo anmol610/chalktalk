@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.example.lenovo.chalk_talk.AddQuizActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="18sp"
+        android:textColor="#a3a2a2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="enter question"
+        android:id="@+id/question_et"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option 1"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#a3a2a2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="enter option"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:id="@+id/option1_et"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option 2"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#a3a2a2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="enter option"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:id="@+id/option2_et"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option 3"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#a3a2a2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="enter option"
+        android:id="@+id/option3_et"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option 4"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#a3a2a2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="enter option"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:id="@+id/option4_et"
+        android:textColor="#000"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="18sp"
+
+        android:layout_marginTop="10dp"
+        android:textColor="#a3a2a2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="option number"
+        android:id="@+id/answer_et"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="#000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:onClick="save_quiz"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FINISH"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:onClick="finish_quiz"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+</ScrollView>

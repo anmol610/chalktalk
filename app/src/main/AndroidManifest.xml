@@ -48,11 +48,33 @@
         <activity android:name=".add_course" />
         <activity android:name=".course_vidd" />
         <activity android:name=".book_course" />
-        <activity android:name=".Show_videos" />
+        <activity
+            android:name=".Show_videos"
+            android:screenOrientation="landscape" />
         <activity android:name=".uploaded" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".show_pdf" />
-        <activity android:name=".show_images"></activity>
+        <activity android:name=".show_images" />
+        <activity
+            android:name=".AddCourseContentActivity"
+            android:theme="@style/AppTheme_Action" />
+        <activity
+            android:name=".SelectContentTypeActivity"
+            android:theme="@style/AppTheme_Action" />
+        <activity
+            android:name=".AddModuleNameActivity"
+            android:theme="@style/AppTheme_Action" />
+        <activity
+            android:name=".ViewJoinedCourseModulesActivity"
+            android:theme="@style/AppTheme_Action" />
+        <activity
+            android:name=".AddQuizActivity"
+            android:theme="@style/AppTheme_Action" />
+        <activity
+            android:name=".AddQuizNameActivity"
+            android:theme="@style/AppTheme_Action" />
+        <activity android:name=".ShowQuizActivity"
+            android:theme="@style/AppTheme_Action"></activity>
     </application>
 
 </manifest>

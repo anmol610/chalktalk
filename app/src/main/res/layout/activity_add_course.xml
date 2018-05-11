@@ -34,6 +34,7 @@
         android:layout_below="@id/title"
         android:layout_marginTop="10dp"
         android:maxLines="1"
+
         android:layout_margin="10dp"
         android:background="@drawable/rounded_stroke"
         android:singleLine="true"
@@ -47,8 +48,12 @@
         android:layout_margin="10dp"
         android:background="@drawable/rounded_stroke"
         android:layout_marginTop="10dp"
-        android:hint="course duration"
-        android:padding="5dp" />
+        android:hint="course duration in months"
+        android:padding="5dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:imeOptions="actionNext"/>
 
     <Spinner
         android:id="@+id/spintestAdd"
@@ -69,61 +74,18 @@
         android:enabled="false"
         android:padding="5dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select cource material Type"
-        android:layout_marginTop="10dp"
-        android:id="@+id/notes_type_heading"
-        android:layout_below="@+id/session"/>
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
 
-        android:id="@+id/select_materiial_type"
-        android:orientation="horizontal"
-        >
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="PDF"
-            android:id="@+id/pdf_radio_btn"
-            />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="VIDEO"
-            android:id="@+id/video_radio_btn"
-            />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="IMAGE"
-            android:id="@+id/image_radio_btn"
-            />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DOC"
-            android:id="@+id/doc_radio_btn"
-            />
-    </RadioGroup>
 
     <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="#1f2b78"
-        android:text="Done"
+        android:text="Add course content"
         android:id="@+id/add_btn"
         android:textColor="#fff"
         android:textStyle="bold"
+
         />
 </LinearLayout>

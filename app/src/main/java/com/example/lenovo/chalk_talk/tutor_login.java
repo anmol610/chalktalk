@@ -2,6 +2,7 @@ package com.example.lenovo.chalk_talk;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -63,6 +64,13 @@ public class tutor_login extends AppCompatActivity {
 
                 if(task.isSuccessful())
                 {
+                    SharedPreferences.Editor sp = getSharedPreferences("user_info" , MODE_PRIVATE).edit();
+
+                    sp.putString("type" , "tutor");
+
+                    sp.commit();
+
+
                     Toast.makeText(tutor_login.this,"done",Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(tutor_login.this,Tutor_home_page.class);
                     startActivity(i);

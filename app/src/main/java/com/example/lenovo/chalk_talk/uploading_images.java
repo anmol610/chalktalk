@@ -103,9 +103,8 @@ public class uploading_images extends AppCompatActivity {
                     fileDoneList.add("uploading");
                     uploadListAdapter.notifyDataSetChanged();
 
-                   final  long currentTime = getIntent().getLongExtra("current_time" , 0);
 
-                    StorageReference fileToUpload = mStorage.child("Images").child(String.valueOf(currentTime)).child(fileName);
+                    StorageReference fileToUpload = mStorage.child("Images").child(getIntent().getStringExtra("course_id")+"_"+getIntent().getStringExtra("module_id")).child(fileName);
 
 
 
@@ -137,7 +136,7 @@ public class uploading_images extends AppCompatActivity {
                                }
                                courseUrls urls = new courseUrls(url);
 
-                               database.getReference().child("images_url").child(String.valueOf(currentTime)).setValue(urls).addOnCompleteListener(new OnCompleteListener<Void>() {
+                               database.getReference().child("images_url").child(getIntent().getStringExtra("course_id")+"_"+getIntent().getStringExtra("module_id")).setValue(urls).addOnCompleteListener(new OnCompleteListener<Void>() {
                                    @Override
                                    public void onComplete(@NonNull Task<Void> task) {
 

@@ -74,10 +74,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#3d1919"
-            android:text="       Information  Tecnology"
+            android:text="Information  Tecnology"
             android:textSize="40dp"
             android:textStyle="italic|bold"
             android:id="@+id/it1"
+            android:gravity="center"
            android:layout_centerInParent="true"/>
 
     </RelativeLayout>
@@ -111,6 +112,7 @@
                 android:textSize="40dp"
                 android:textStyle="italic|bold"
                 android:id="@+id/cs"
+                android:gravity="center"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="20dp"/>
 
@@ -143,7 +145,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#932b2b"
-            android:text="music"
+            android:text="Music"
             android:textSize="40dp"
             android:id="@+id/dance1"
             android:textStyle="bold|italic"

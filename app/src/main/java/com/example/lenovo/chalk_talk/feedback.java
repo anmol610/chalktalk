@@ -14,7 +14,6 @@ public class feedback extends AppCompatActivity {
     }
 
     public void backarrow_feed(View view) {
-        Intent i = new Intent(feedback.this,learner_home.class);
-        startActivity(i);
+       finish();
     }
 }

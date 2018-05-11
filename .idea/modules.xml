@@ -4,11 +4,13 @@
     <modules>
       <module fileurl="file://C:\Users\Mohit pal\chalk_talk\Chalk_talk.iml" filepath="C:\Users\Mohit pal\chalk_talk\Chalk_talk.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\lenovo\chalk_talk\app\app.iml" filepath="C:\Users\lenovo\chalk_talk\app\app.iml" />
       <module fileurl="file://C:\Users\Mohit pal\chalk_talk\app\app.iml" filepath="C:\Users\Mohit pal\chalk_talk\app\app.iml" />
+      <module fileurl="file://C:\Users\lenovo\chalk_talk\app\app.iml" filepath="C:\Users\lenovo\chalk_talk\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\lenovo\chalk_talk\chalk_talk.iml" filepath="C:\Users\lenovo\chalk_talk\chalk_talk.iml" />
       <module fileurl="file://$PROJECT_DIR$/chalk_talk.iml" filepath="$PROJECT_DIR$/chalk_talk.iml" />
       <module fileurl="file://C:\Users\Mohit pal\chalk_talk\chalk_talk.iml" filepath="C:\Users\Mohit pal\chalk_talk\chalk_talk.iml" />
-      <module fileurl="file://C:\Users\lenovo\chalk_talk\chalk_talk.iml" filepath="C:\Users\lenovo\chalk_talk\chalk_talk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chalktalk.iml" filepath="$PROJECT_DIR$/chalktalk.iml" />
     </modules>
   </component>
 </project>

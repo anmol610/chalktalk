@@ -112,7 +112,12 @@ public class uploading_pdf_files extends AppCompatActivity implements View.OnCli
                         textViewStatus.setText("File Uploaded Successfully");
 
                         Upload upload = new Upload(editTextFilename.getText().toString(), taskSnapshot.getDownloadUrl().toString());
-                        mDatabaseReference.child("pdf_urls").child(String.valueOf(getIntent().getLongExtra("current_time",0))).setValue(upload);
+
+                        mDatabaseReference.child("pdf_urls").child(getIntent().getStringExtra("course_id")+"_"+getIntent().getStringExtra("module_id")).setValue(upload);
+
+                        Toast.makeText(uploading_pdf_files.this, "Upload Success", Toast.LENGTH_SHORT).show();
+
+                        finish();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

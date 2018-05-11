@@ -6,22 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.lenovo.chalk_talk.SearchActivity">
-<SearchView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/search_bar"
-    android:background="@drawable/rounded_stroke"
-    android:layout_margin="10dp">
+    android:background="#f4f8ff"
+    android:padding="15dp"
+    tools:context="com.example.lenovo.chalk_talk.ViewJoinedCourseModulesActivity">
 
-</SearchView>
+
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycler"
-        android:layout_margin="10dp">
+        android:layout_marginTop="10dp"
+        android:id="@+id/all_course_module_recycler">
 
     </android.support.v7.widget.RecyclerView>
+
 
 </LinearLayout>
