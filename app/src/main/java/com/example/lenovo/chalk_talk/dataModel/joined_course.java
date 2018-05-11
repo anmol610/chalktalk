@@ -4,16 +4,16 @@ package com.example.lenovo.chalk_talk.dataModel;
  * Created by lenovo on 03-Apr-18.
  */
 
-public class course_details {
+public class joined_course {
 
-    public String course_name , course_id , courseduration , tutorname , course_category , tutor_email , time ;
+    public String course_name , course_id , courseduration ,  tutorname , course_category , tutor_email , time ;
 
-    course_details()
+    joined_course()
     {
 
     }
 
-    public course_details(String course_name,String course_id,String courseduration, String tutorname,String course_category , String time)
+    public joined_course(String course_name, String course_id, String courseduration,  String tutorname, String course_category , String time)
 
     {
         this.course_id = course_id;
@@ -27,7 +27,7 @@ public class course_details {
 
     }
 
-    public course_details(String course_name,String course_id,String courseduration, String tutorname,String course_category , String time , String tutor_email)
+    public joined_course(String course_name, String course_id, String courseduration,  String tutorname, String course_category , String time , String tutor_email)
 
     {
         this.course_id = course_id;

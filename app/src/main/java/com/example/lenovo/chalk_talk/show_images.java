@@ -1,5 +1,6 @@
 package com.example.lenovo.chalk_talk;
 
+import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -99,13 +100,20 @@ public class show_images extends AppCompatActivity {
     private void get_images()
     {
 
+        final ProgressDialog pd = new ProgressDialog(show_images.this);
+
+        pd.setTitle("Loading");
+        pd.setMessage("Please wait");
+
+        pd.show();
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
 
-        database.getReference().child("images_url").child(getIntent().getStringExtra("images_key")).addListenerForSingleValueEvent(new ValueEventListener() {
+        database.getReference().child("images_url").child(getIntent().getStringExtra("course_id")+"_"+getIntent().getStringExtra("module_id")).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
+                pd.hide();
 
                 courseUrls urls = dataSnapshot.getValue(courseUrls.class);
 

@@ -122,7 +122,7 @@ public class UploadVideoActivity extends AppCompatActivity implements View.OnCli
                     // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
 
                     Upload upload = new Upload(editTextFilename.getText().toString(), taskSnapshot.getDownloadUrl().toString());
-                    mDatabaseReference.child("video_urls").child(String.valueOf(getIntent().getLongExtra("current_time",0))).setValue(upload);
+                    mDatabaseReference.child("video_urls").child(getIntent().getStringExtra("course_id")+"_"+getIntent().getStringExtra("module_id")).setValue(upload);
 
                     textViewStatus.setText("File uploaded successfully");
                     Toast.makeText(UploadVideoActivity.this, "Upload Success", Toast.LENGTH_SHORT).show();

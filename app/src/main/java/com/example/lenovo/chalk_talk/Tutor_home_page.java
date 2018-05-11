@@ -96,7 +96,7 @@ public class Tutor_home_page extends AppCompatActivity {
         FirebaseAuth f_auth = FirebaseAuth.getInstance();
         f_auth.signOut();
         finish();
-        startActivity(new Intent(this, learner_login.class));
+        startActivity(new Intent(this, tutor_login.class));
     }
     }
 

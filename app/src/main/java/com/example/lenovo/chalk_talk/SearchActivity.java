@@ -20,7 +20,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class SearchActivity extends AppCompatActivity {
     SearchView sv;
@@ -81,20 +83,18 @@ public class SearchActivity extends AppCompatActivity {
 
                 for(DataSnapshot all_course : dataSnapshot.getChildren()) {
 
-                    for (DataSnapshot data : all_course.getChildren()) {
-
-                        for (DataSnapshot data2 : data.getChildren()) {
+                        for (DataSnapshot data2 : all_course.getChildren()) {
 
 
                             course_details details = data2.getValue(course_details.class);
 
-                            course_details detail_with_key = new course_details(details.course_name, details.course_id, details.courseduration, details.type, details.tutorname, details.course_category, data2.getKey(), data.getKey());
+                            course_details detail_with_key = new course_details(details.course_name, details.course_id, details.courseduration, details.tutorname, details.course_category, details.time, all_course.getKey());
                             System.out.println("rrrrrr");
                             course_list.add(detail_with_key);
                         }
 
 
-                    }
+
                 }
 
             }
@@ -108,7 +108,7 @@ public class SearchActivity extends AppCompatActivity {
 
     public class view_holder extends RecyclerView.ViewHolder{
 
-        TextView course_id,course_name;
+        TextView course_id,course_name , date;
         LinearLayout course_lay;
         ImageView course_img;
         public view_holder(View itemView) {
@@ -118,6 +118,8 @@ public class SearchActivity extends AppCompatActivity {
             course_lay = itemView.findViewById(R.id.course_lay);
             course_id = itemView.findViewById(R.id.course_id);
             course_img = itemView.findViewById(R.id.course_img);
+
+            date = itemView.findViewById(R.id.date);
         }
     }
 
@@ -138,21 +140,25 @@ public class SearchActivity extends AppCompatActivity {
 
             final course_details data= search_course_list.get(position);
             holder.course_name.setText(data.course_name);
-         /*   if (course.equals("computer")) {
+            if (data.course_category.equals("Computer Science")) {
                 holder.course_img.setImageDrawable(getResources().getDrawable(R.drawable.cs_icon));
 
-            } if(course.equals("dance")) {
+            } if(data.course_category.equals("Dance")) {
                 holder.course_img.setImageDrawable(getResources().getDrawable(R.drawable.dance_icon));
 
             }
-            if(course.equals("music")) {
+            if(data.course_category.equals("Music")) {
                 holder.course_img.setImageDrawable(getResources().getDrawable(R.drawable.music_icon));
 
             }
-            if(course.equals("tech")) {
+            if(data.course_category.equals("Technology")) {
                 holder.course_img.setImageDrawable(getResources().getDrawable(R.drawable.it_icon));
 
-            }*/
+            }
+
+            holder.date.setText(getDate(Long.parseLong(data.time)));
+
+
             holder.course_id.setText(data.course_id);
             holder.course_lay.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -167,7 +173,12 @@ public class SearchActivity extends AppCompatActivity {
                     i.putExtra("courseid",courseid);
                     i.putExtra("courseduration",courseduration);
                     i.putExtra("coursetutor",tutorname);
+                    i.putExtra("tutor_contact" , data.tutor_email);
+                    i.putExtra("course_category" , data.course_category);
+                    i.putExtra("course_time" , data.time);
                     startActivity(i);
+
+
                 }
             });
         }
@@ -194,6 +205,17 @@ public class SearchActivity extends AppCompatActivity {
         Adapter adapter = new Adapter();
 
         course_recycler.setAdapter(adapter);
+    }
+
+    public static String getDate(long milliSeconds)
+    {
+        // Create a DateFormatter object for displaying date in specified format.
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MMM/yyyy hh:mm");
+
+        // Create a calendar object that will convert the date and time value in milliseconds to date.
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(milliSeconds);
+        return formatter.format(calendar.getTime());
     }
 
 }
