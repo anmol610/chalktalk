@@ -11,12 +11,14 @@
     tools:context="com.example.lenovo.chalk_talk.AddCourseContentActivity">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#fff"
-        android:background="@color/colorPrimary"
         android:text="ADD MODULE"
-        android:padding="10dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="#1f2b78"
+        android:padding="20dp"
+        android:layout_margin="20dp"
         android:clickable="true"
         android:onClick="open_module_option_dialog"
         />

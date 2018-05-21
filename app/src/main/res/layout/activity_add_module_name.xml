@@ -17,6 +17,8 @@
         android:textColor="#000"
         android:inputType="text"
         android:singleLine="true"
+        android:padding="10dp"
+        android:background="@drawable/rounded_stroke"
         android:maxLines="1"
         android:id="@+id/module_name_et"
         />
@@ -68,11 +70,14 @@
     </RadioGroup>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:padding="20dp"
         android:textColor="#fff"
         android:text="ADD"
+        android:background="@android:drawable/dialog_holo_light_frame"
+
+        android:backgroundTint="#1f2b78"
         android:layout_marginTop="15dp"
         android:onClick="add_module"
         />
