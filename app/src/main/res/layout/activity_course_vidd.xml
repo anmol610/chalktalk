@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_stroke"
+        android:padding="10dp"
         android:hint="Enter a name for your file"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
@@ -18,9 +20,11 @@
         android:id="@+id/buttonUploadFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="#1f2b78"
         android:textColor="#fff"
-        android:background="#1f2b78"
-        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
         android:textStyle="bold"
         android:layout_below="@id/editTextFileName"
         android:text="Upload VIDEO" />

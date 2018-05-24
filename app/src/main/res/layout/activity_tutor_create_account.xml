@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/signup2"
         android:orientation="vertical"
         android:padding="10dp"
+        android:gravity="center"
         tools:context="com.example.lenovo.chalk_talk.Create_account">
 
         <TextView
@@ -24,7 +24,12 @@
             android:textColor="#000"
             android:textSize="35dp"
             android:textStyle="bold" />
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_stroke"
+    android:padding="10dp">
         <EditText
             android:id="@+id/name_et"
             android:layout_width="match_parent"
@@ -160,16 +165,18 @@
             android:textColor="#222"
             android:textColorHint="#000"
             android:textSize="15sp" />
-
+</LinearLayout>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/cpassword_et"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="30sp"
-            android:background="#080e51"
+            android:padding="20dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:backgroundTint="#1f2b78"
+
+            android:layout_margin="10dp"
             android:onClick="register_tutor"
             android:text="register"
             android:textColor="#fff" />
-    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>
